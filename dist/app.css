@@ -717,6 +717,103 @@ table {
   font-size: 1rem;
 }
 
+.form > .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-bottom: 1.5rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.form > .field .two.fields {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.form > .field .two.fields .field:first-of-type {
+  padding-right: .75rem;
+}
+
+.form > .field .two.fields .field:last-of-type {
+  padding-left: .75rem;
+}
+
+.form > .field .three.fields {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.form > .field .three.fields .field {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  width: 100%;
+}
+
+.form > .field .three.fields .field:first-of-type {
+  padding-left: 0;
+}
+
+.form > .field .three.fields .field:last-of-type {
+  padding-right: 0;
+}
+
+.form > .field label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #606f7b;
+  font-size: .75rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.form > .field input.error {
+  border-color: #e3342f;
+  margin-bottom: .75rem;
+}
+
+.form > .field input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  width: 100%;
+  background-color: #f1f5f8;
+  color: #606f7b;
+  border-width: 1px;
+  border-color: #f1f5f8;
+  border-radius: .25rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.25;
+  margin-bottom: .75rem;
+}
+
+.form > .field input:focus {
+  outline: 0;
+  background-color: #fff;
+  border-color: #b8c2cc;
+}
+
+@media (min-width: 768px) {
+  .three.screens .field {
+    width: 33.33333%;
+  }
+
+  .two.fields .field {
+    width: 50%;
+  }
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
