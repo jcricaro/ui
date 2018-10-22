@@ -687,6 +687,36 @@ table {
  * @import "components/forms";
  */
 
+.card {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  border-radius: .5rem;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.card .content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card .content .header {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+
+.card .content .description {
+  color: #606f7b;
+  font-size: 1rem;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

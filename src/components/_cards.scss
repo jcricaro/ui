@@ -1,0 +1,15 @@
+.card {
+  @apply bg-white mx-auto shadow-lg rounded-lg overflow-hidden cursor-pointer font-sans;
+
+  .content {
+    @apply px-6 py-4;
+
+    .header {
+      @apply font-bold text-xl mb-2;
+    }
+
+    .description {
+      @apply text-grey-darker text-base;
+    }
+  }
+}
